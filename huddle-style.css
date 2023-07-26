@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+body{
+    margin: 0;
+    background-image: url('./images/bg-mobile.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #684BB1;
+    flex-direction: column;
+}
+button{
+    color: #684BB1;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 400;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s, color 0.2s;
+}
+button:hover{
+    background-color: #E880E8;
+    color: white;
+    cursor: pointer;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.huddle-logo-div{
+    width: 100%;
+    margin-top: 38.2px;
+    justify-content: left;
+    align-items: normal;
+}
+.huddle-logo{
+    width: 120px;
+    margin-left: 40px;
+}
+.illust-div{
+    width: 375px;
+    margin-top: 39.11px;
+}
+.illustration{
+    width: 296px;
+}
+.bold-text{
+    color: white;
+    width: 280px;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 40px;
+}
+.boldnt-text{
+    color: white;
+    width: 304px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    text-align: center;
+}
+.logos-div{
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 104px;
+    flex-direction: row;
+}
+.logo{
+    width: 28px;
+    height: 28px;
+    margin-left: 5px;
+    margin-right: 5px;
+    filter: invert(100%);
+}
+.logo:hover{
+    filter: brightness(0) saturate(100%) invert(36%) sepia(76%) saturate(2898%) hue-rotate(295deg) brightness(101%) contrast(98%);
+    cursor: pointer;
+}
+
+@media (min-width: 735px){
+    body{
+        background-image: url('./images/bg-desktop.svg');
+        background-size:auto;
+    }
+}
+
+@media (min-width: 1250px){
+    body{
+        background-size: cover;
+    }
+    button{
+        border-radius: 28px;
+        font-size: 18px;
+        height: 56px;
+        margin-top: 13px;
+    }
+    .biggest-div{
+        flex-direction: row;
+    }
+    .huddle-logo-div{
+        margin: 0;
+    }
+    .huddle-logo{
+        width: 200px;
+        margin-top: 64px;
+        margin-bottom: 30px;
+        align-self: flex-start;
+    }
+    .illust-div{
+        margin-top: 0;
+        margin-right: 40px;
+        width: 50%;
+        height: 100%;
+    }
+    .illustration{
+        margin-top: 50px;
+        width: 690px;
+    }
+    .text-button-div{
+        width: 500px;
+        align-items: flex-start;
+    }
+    .bold-text{
+        margin: 0;
+        width: 487px;
+        font-size: 40px;
+        line-height: 60px;
+        text-align: left;
+    }
+    .boldnt-text{
+        width: 520px;
+        line-height: 26px;
+        font-size: 18px;
+        text-align: left;
+    }
+    .logos-div{
+        width: 90%;
+        flex-direction: row;
+        vertical-align: bottom;
+        justify-content: flex-end;
+        margin-top: 40px;
+    }
+    .logo{
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
